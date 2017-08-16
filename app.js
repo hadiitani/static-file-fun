@@ -11,7 +11,7 @@ app.use(express.static(filePath));
 
 app.use(function(req, res) {
     res.status(404);
-    res.send("File not found!");
+    res.send("File not found! Maybe try fetching files: 'pepe.jpg' or 'sampleText.txt'?");
 });
 
 app.listen(8081, function() {
